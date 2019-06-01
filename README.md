@@ -6,7 +6,7 @@ Also try to write multi-language Doc. to improve my language skill. (I hope so.)
 
 # Golang　練習リポジトリ
 
-Go言語練習用のリポジトリ、コードを書いたりしながら自分的に大事な（忘れそうな）メモを残しておく。
+Go言語練習用のリポジトリ、コードを書いたりしながら自分的に大事な（忘れそうな）メモを残しておく。
 
 （人間の）言語能力のトレーニングため、多言語でメモを書いていきます。
 
