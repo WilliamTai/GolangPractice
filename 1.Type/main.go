@@ -30,4 +30,15 @@ func main() {
 	//Type conversion, as cast in C#
 	x = int(b)
 	fmt.Println("conversion b as int, x = ", x)
+
+	//string type, to see the internal
+	s := "Hello world"
+	bs := []byte(s)
+	fmt.Println("Hello world = ", bs)
+	fmt.Printf("%T\n",bs)
+
+	//print UTF8 code point
+	for i := 0; i < len(s); i++ {
+		fmt.Printf("%#U ", s[i])
+	}
 }
