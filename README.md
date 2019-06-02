@@ -4,7 +4,7 @@ This Repo. is for learing Golang, do some coding and leave some memo what I thin
 
 Also try to write multi-language Doc. to improve my language skill. (I hope so.)
 
-# Golang　練習リポジトリ
+# Golang練習用リポジトリ
 
 Go言語練習用のリポジトリ、コードを書いたりしながら自分的に大事な（忘れそうな）メモを残しておく。
 
