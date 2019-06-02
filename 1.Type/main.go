@@ -11,6 +11,14 @@ var z string
 type hotdog int
 var b hotdog
 
+//constant
+//this give the compiler some flexibility
+const(
+	e = 10
+	f = 10.10
+	g = "string const"
+)
+
 func main() {
 	fmt.Println(x)
 	fmt.Println(y)
@@ -41,4 +49,7 @@ func main() {
 	for i := 0; i < len(s); i++ {
 		fmt.Printf("%#U ", s[i])
 	}
+
+	//Error: can not assign to constant
+	//e = 9999
 }
