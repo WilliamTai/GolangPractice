@@ -57,4 +57,29 @@ func main() {
 	//for {}
 	//x % 2 == 0 output:2,4,6,8,10,12,14,16,18,20,
 	//x =  21 ,break!
+
+	//Switch statement
+	fmt.Println("\nEx4:")
+	fmt.Println("Switch statement and fallthrough")
+	n := "William"
+	switch n {
+	case "Bond":
+		fmt.Println("Hello Bond!")
+	case "William":
+		fmt.Println("Hello William")
+		fallthrough
+		//CAUTION: during fallthrough, the below case will be run.
+		//DO NOT USE IT, this will break the logic flow
+	case "Kirito":
+		fmt.Println("Hello Kirito")
+	default:
+		fmt.Println("This is the switch default case.")
+	}
+
+	//output:
+	//Ex4:
+	//Switch statement and fallthrough
+	//Hello William
+	//Hello Kirito
+
 }
