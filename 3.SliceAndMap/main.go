@@ -62,4 +62,9 @@ func main() {
 	a = append(a, b...) //the ... means all elements
 	fmt.Println(a)
 
+	//Remove slice element
+	fmt.Println("Remove slice element")
+	a = append(a[:2], a[5:]...)
+	fmt.Println(a)
+
 }
