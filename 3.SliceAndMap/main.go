@@ -30,8 +30,8 @@ func main() {
 	//[4444]
 
 	fmt.Println("Output range here:")
-	for i, v := range a{
-		fmt.Println(i,v)
+	for i, v := range a {
+		fmt.Println(i, v)
 	}
 	//output:
 	//Output range here:
@@ -42,7 +42,7 @@ func main() {
 
 	fmt.Println("for loop here:")
 	//This one will do the same thing above but if you miss calculating the index will causing error
-	for  g := 0; g <= 3; g++ {
+	for g := 0; g <= 3; g++ {
 		fmt.Println(g, a[g])
 	}
 	//output:
@@ -54,11 +54,11 @@ func main() {
 
 	//Append slice here.
 	fmt.Println("Append slice with new element here:")
-	a = append(a,123, 456)
+	a = append(a, 123, 456)
 	fmt.Println(a)
 
 	fmt.Println("Append with two different slice object:")
-	b := []int{777,888,999}
+	b := []int{777, 888, 999}
 	a = append(a, b...) //the ... means all elements
 	fmt.Println(a)
 
@@ -80,8 +80,8 @@ func main() {
 	fmt.Println("Make slice example:")
 	c := make([]int, 3, 5)
 	fmt.Println(c)
-	fmt.Println("len:",len(c))
-	fmt.Println("cap:",cap(c))
+	fmt.Println("len:", len(c))
+	fmt.Println("cap:", cap(c))
 	//Make slice example:
 	//[0 0 0]
 	//len: 3
@@ -90,8 +90,8 @@ func main() {
 	fmt.Println("Assign c[1]:")
 	c[1] = 9
 	fmt.Println(c)
-	fmt.Println("len:",len(c))
-	fmt.Println("cap:",cap(c))
+	fmt.Println("len:", len(c))
+	fmt.Println("cap:", cap(c))
 	//Assign c[1]:
 	//[0 9 0]
 	//len: 3
@@ -100,8 +100,8 @@ func main() {
 	fmt.Println("Append:")
 	c = append(c, 7)
 	fmt.Println(c)
-	fmt.Println("len:",len(c))
-	fmt.Println("cap:",cap(c))
+	fmt.Println("len:", len(c))
+	fmt.Println("cap:", cap(c))
 	//Append:
 	//[0 9 0 7]
 	//len: 4
@@ -110,8 +110,8 @@ func main() {
 	fmt.Println("Append one more:")
 	c = append(c, 444)
 	fmt.Println(c)
-	fmt.Println("len:",len(c))
-	fmt.Println("cap:",cap(c))
+	fmt.Println("len:", len(c))
+	fmt.Println("cap:", cap(c))
 	//Append one more:
 	//[0 9 0 7 444]
 	//len: 5
@@ -120,8 +120,8 @@ func main() {
 	fmt.Println("Append one more to overhead:")
 	c = append(c, 555)
 	fmt.Println(c)
-	fmt.Println("len:",len(c))
-	fmt.Println("cap:",cap(c))
+	fmt.Println("len:", len(c))
+	fmt.Println("cap:", cap(c))
 	//Append one more to overhead:
 	//[0 9 0 7 444 555]
 	//len: 6
