@@ -74,6 +74,15 @@ func main() {
 	//Remove slice element
 	//[1 22 456 777 888 999]
 
+	//Multi-dimensional slice
+	fmt.Println("Multi-dimensional slice:")
+	a1 := []string{"aaa","bbb","ccc"}
+	a2 := []string{"ddd","eee","fff"}
+	a1a2 := [][]string{a1,a2}
+	fmt.Println(a1a2)
+	//Multi-dimensional slice:
+	//[[aaa bbb ccc] [ddd eee fff]]
+
 	//The slice will dynamic changed if slice go bigger,
 	//this will causing compiler and runtime issue if do all the time.
 	//To prevent the issue using make to hold the size if you already know how much the data you have.
