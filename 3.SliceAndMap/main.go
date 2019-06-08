@@ -52,5 +52,14 @@ func main() {
 	//2 333
 	//3 4444
 
-	
+	//Append slice here.
+	fmt.Println("Append slice with new element here:")
+	a = append(a,123, 456)
+	fmt.Println(a)
+
+	fmt.Println("Append with two different slice object:")
+	b := []int{777,888,999}
+	a = append(a, b...) //the ... means all elements
+	fmt.Println(a)
+
 }
