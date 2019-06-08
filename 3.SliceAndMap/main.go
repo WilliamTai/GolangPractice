@@ -74,4 +74,56 @@ func main() {
 	//Remove slice element
 	//[1 22 456 777 888 999]
 
+	//The slice will dynamic changed if slice go bigger,
+	//this will causing compiler and runtime issue if do all the time.
+	//To prevent the issue using make to hold the size if you already know how much the data you have.
+	fmt.Println("Make slice example:")
+	c := make([]int, 3, 5)
+	fmt.Println(c)
+	fmt.Println("len:",len(c))
+	fmt.Println("cap:",cap(c))
+	//Make slice example:
+	//[0 0 0]
+	//len: 3
+	//cap: 5
+
+	fmt.Println("Assign c[1]:")
+	c[1] = 9
+	fmt.Println(c)
+	fmt.Println("len:",len(c))
+	fmt.Println("cap:",cap(c))
+	//Assign c[1]:
+	//[0 9 0]
+	//len: 3
+	//cap: 5
+
+	fmt.Println("Append:")
+	c = append(c, 7)
+	fmt.Println(c)
+	fmt.Println("len:",len(c))
+	fmt.Println("cap:",cap(c))
+	//Append:
+	//[0 9 0 7]
+	//len: 4
+	//cap: 5
+
+	fmt.Println("Append one more:")
+	c = append(c, 444)
+	fmt.Println(c)
+	fmt.Println("len:",len(c))
+	fmt.Println("cap:",cap(c))
+	//Append one more:
+	//[0 9 0 7 444]
+	//len: 5
+	//cap: 5
+
+	fmt.Println("Append one more to overhead:")
+	c = append(c, 555)
+	fmt.Println(c)
+	fmt.Println("len:",len(c))
+	fmt.Println("cap:",cap(c))
+	//Append one more to overhead:
+	//[0 9 0 7 444 555]
+	//len: 6
+	//cap: 10
 }
