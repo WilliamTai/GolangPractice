@@ -66,5 +66,12 @@ func main() {
 	fmt.Println("Remove slice element")
 	a = append(a[:2], a[5:]...)
 	fmt.Println(a)
+	//output:
+	//Append slice with new element here:
+	//[1 22 333 4444 123 456]
+	//Append with two different slice object:
+	//[1 22 333 4444 123 456 777 888 999]
+	//Remove slice element
+	//[1 22 456 777 888 999]
 
 }
