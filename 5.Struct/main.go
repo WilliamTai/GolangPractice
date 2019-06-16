@@ -1,6 +1,8 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+)
 
 //In Golang, we don't say class but using struct
 type person struct {
@@ -62,4 +64,19 @@ func main() {
 	//Age: 29
 	//AWS Skill Certificated: true
 
+	//Anonymous struct
+	//If you only use the struct in a one little area, this might be a good idea
+	p3 := struct {
+		firstName string
+		lastName  string
+		IsHuman   bool
+	}{
+		firstName: "Screct",
+		lastName:  "Agent",
+		IsHuman:   true,
+	}
+
+	fmt.Println(p3)
+	//output:
+	// {Screct Agent true}
 }
