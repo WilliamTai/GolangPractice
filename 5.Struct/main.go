@@ -9,6 +9,12 @@ type person struct {
 	age       int
 }
 
+//This shows how to embedded struct
+type engineerProfile struct {
+	person
+	AwsSkillCertificated bool
+}
+
 func main() {
 	p1 := person{
 		firstName: "William",
@@ -33,5 +39,27 @@ func main() {
 	//First name: William
 	//Last name: Tai
 	//Age: 29
+
+	//Print embedded struct
+	worker1 := engineerProfile{
+		p1,
+		true,
+	}
+	fmt.Println(worker1)
+	//output:
+	//{{William Tai 29} true}
+
+	//Notice that the inside of struct has been promote to upper level by default
+	//and you shouldn't make a same name item in upper level, something like firstName as example.
+	fmt.Println(
+		"First name:", worker1.firstName, //Same as worker1.person.firstName,
+		"\nLast name:", worker1.lastName,
+		"\nAge:", worker1.age,
+		"\nAWS Skill Certificated:", worker1.AwsSkillCertificated)
+	//output
+	//First name: William
+	//Last name: Tai
+	//Age: 29
+	//AWS Skill Certificated: true
 
 }
