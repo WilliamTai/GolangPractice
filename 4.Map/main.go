@@ -54,7 +54,7 @@ func main() {
 	//output:
 	//map[John:30 William:29]
 
-	//If delete with item which didn't exist, it won't be an error.
+	//If delete with item which it doesn't exist, it won't be an error.
 	//so the code below shows how to verified then delete
 	if v,ok := person["William"]; ok {
 		fmt.Println("Value:", v)
