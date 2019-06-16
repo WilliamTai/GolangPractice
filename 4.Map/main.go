@@ -1,6 +1,8 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+)
 
 func main() {
 	person := map[string]int{
@@ -35,4 +37,31 @@ func main() {
 	}
 	//output:
 	//Jenny's age: 24
+
+	//Add element and print all with for loop
+	person["William"] = 29
+	for k, v := range person {
+		fmt.Println(k, v)
+	}
+	//output:
+	//William 29
+	//John 30
+	//Jenny 24
+
+	//Delete element
+	delete(person,"Jenny")
+	fmt.Println(person)
+	//output:
+	//map[John:30 William:29]
+
+	//If delete with item which didn't exist, it won't be an error.
+	//so the code below shows how to verified then delete
+	if v,ok := person["William"]; ok {
+		fmt.Println("Value:", v)
+		delete(person, "William")
+		fmt.Println(person)
+	}
+	//output:
+	//Value: 29
+	//map[John:30]
 }
