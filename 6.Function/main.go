@@ -2,6 +2,8 @@ package main
 
 import "fmt"
 
+// func (r receiver) identifier(parameter(s)) (return(s)) { code }
+
 func main() {
 	printHelloWorld()
 	//output:
