@@ -4,6 +4,20 @@ This Repo. is for learing Golang, do some coding and leave some memo what I thin
 
 Also try to write multi-language Doc. to improve my language skill. (I hope so.)
 
+## Trouble shooting
+
+### Debugserver error in MacOS
+
+~~~
+could not launch process: debugserver or lldb-server not found: install XCode's command line tools or lldb-server
+~~~
+
+Install xcode command-line tool to fix it.
+
+~~~
+$xcode-select --install
+~~~
+
 # Golang練習用リポジトリ
 
 Go言語練習用のリポジトリ、コードを書いたりしながら自分的に大事な（忘れそうな）メモを残しておく。
