@@ -4,6 +4,25 @@ import "fmt"
 
 // func (r receiver) identifier(parameter(s)) (return(s)) { code }
 
+type person struct {
+	firstName string
+	lastName  string
+}
+
+type engineer struct {
+	person
+	awsCertificated bool
+}
+
+//When you have a receiver, it is going to attach the function to the type
+func (s engineer) coding() {
+	fmt.Println("write some code.")
+}
+
+func (s engineer) speaking() {
+	fmt.Println("I'm ", s.firstName, s.lastName)
+}
+
 func main() {
 	printHelloWorld()
 	//output:
@@ -32,6 +51,20 @@ func main() {
 	//Loop, now is:  2 Adding:  4 sum:  9
 	//Loop, now is:  3 Adding:  5 sum:  14
 	//Loop, now is:  4 Adding:  6 sum:  20
+
+	//This shows how to attach methods to type struct
+	eng1 := engineer{
+		person: person{
+			firstName: "William",
+			lastName:  "Tai",
+		},
+		awsCertificated: true,
+	}
+	eng1.speaking()
+	eng1.coding()
+	//output:
+	//I'm  William Tai
+	//write some code.
 }
 
 func printHelloWorld() {
@@ -52,7 +85,7 @@ func getTwoReturnValue(firstName, lastName string) (string, bool) {
 	return fmt.Sprint(firstName, lastName), true
 }
 
-func printVariadicParameter(x ...int){
+func printVariadicParameter(x ...int) {
 	fmt.Println(x)
 	fmt.Printf("%T\n", x)
 
