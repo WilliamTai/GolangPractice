@@ -4,6 +4,14 @@ This Repo. is for learing Golang, do some coding and leave some memo what I thin
 
 Also try to write multi-language Doc. to improve my language skill. (I hope so.)
 
+## Something important in Golang
+
+1. In Golang, all about type.
+2. All call by value, no others.
+3. No class but struct.
+4. A method is be attached on struct.
+5. Simple, easy programing
+
 ## Trouble shooting
 
 ### Debugserver error in MacOS
