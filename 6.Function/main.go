@@ -65,6 +65,13 @@ func main() {
 	//output:
 	//I'm  William Tai
 	//write some code.
+
+	//Anonymous Function
+	func (x int){
+		fmt.Println("Print from Anonymous function", x)
+	}(999)
+	//output:
+	//Print from Anonymous function 999
 }
 
 func printHelloWorld() {
