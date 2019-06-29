@@ -72,6 +72,16 @@ func main() {
 	}(999)
 	//output:
 	//Print from Anonymous function 999
+
+	//How to assign a function to a variable
+	//I love this, it's easy to read!
+	func1 := func(x int){
+		fmt.Println("Assigned function print:", x)
+	}
+
+	func1(8888)
+	//output:
+	//Assigned function print: 8888
 }
 
 func printHelloWorld() {
