@@ -38,6 +38,8 @@ Panic you can do something with defer function to recover.
 
 Ref.https://blog.golang.org/defer-panic-and-recover
 
+Error is an interface. if we create another type which implement the error interface, we can add some field or struct to store something we want. when error throw, we can catch the information we want.
+
 # Golang練習用リポジトリ
 
 Go言語練習用のリポジトリ、コードを書いたりしながら自分的に大事な（忘れそうな）メモを残しておく。
