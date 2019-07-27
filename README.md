@@ -26,6 +26,18 @@ Install xcode command-line tool to fix it.
 $xcode-select --install
 ~~~
 
+### Error Handling
+
+Always, always, always check the error.
+
+be aware the difference of Panic and fatal.
+
+Fatal means shutdown the program immediately with os.exit(1).
+
+Panic you can do something with defer function to recover.
+
+Ref.https://blog.golang.org/defer-panic-and-recover
+
 # Golang練習用リポジトリ
 
 Go言語練習用のリポジトリ、コードを書いたりしながら自分的に大事な（忘れそうな）メモを残しておく。
