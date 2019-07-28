@@ -49,6 +49,10 @@ We don't say public or private in Golang.
 
 A method that named beging with lower case means not export(visalbe) outside the package.
 
+## Add some comment above the method begin with //
+
+The comments will become description of the method, it generated automatically.
+
 # Golang練習用リポジトリ
 
 Go言語練習用のリポジトリ、コードを書いたりしながら自分的に大事な（忘れそうな）メモを残しておく。
